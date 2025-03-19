@@ -1,0 +1,9 @@
+{
+    "type": "Gaussian",
+    "parameters": {
+        "dimensions": 200,
+        "count": 300000,
+        "color_radius": 3.0,
+        "_comments": "Notice that, with very high dimensionality, gradually increasing the neighborhood radius can suddenly include most of the data points"
+    }
+}

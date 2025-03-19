@@ -1,0 +1,11 @@
+{
+    "type": "SwissRoll",
+    "parameters": {
+        "count": 20000,
+        "start_radius": 100,
+        "fall_rate": 0.3,
+        "rotations": 2,
+        "widths": [100, 50, 25, 12.5],
+        "virtual_dimensions": 10
+    }
+}

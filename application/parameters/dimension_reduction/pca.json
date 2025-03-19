@@ -1,0 +1,6 @@
+{
+    "type": "PCA",
+    "parameters": {
+        "random_state": 1234
+    }
+}

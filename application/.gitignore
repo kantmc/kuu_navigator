@@ -1,0 +1,12 @@
+/extension
+/screenshots
+*.prof
+*.lprof
+
+.DS_Store
+__pycache__/
+/.vscode/
+/.venv/
+/.pytest_cache/
+/.testmon*
+/docs/build/

@@ -1,0 +1,11 @@
+--shared-neighborhood
+--dimension-reduction
+parameters/dimension_reduction/oriented_mds.json
+--data-source
+parameters/data_source/gaussian_6d_300k.json
+--number-of-points
+1000
+--visual-size
+1.0
+--animation-interval
+3

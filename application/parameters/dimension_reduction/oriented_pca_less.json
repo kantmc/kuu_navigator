@@ -1,0 +1,6 @@
+{
+    "type": "OrientedPCALess",
+    "parameters": {
+        "random_state": 1234
+    }
+}

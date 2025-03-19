@@ -1,0 +1,10 @@
+--dimension-reduction
+parameters/dimension_reduction/oriented_pca.json
+--data-source
+parameters/data_source/gaussian_200d_300k_isotropic.json
+--neighborhood-radius
+18.0
+--visual-size
+0.2
+--number-of-points
+1000

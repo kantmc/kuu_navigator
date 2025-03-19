@@ -1,0 +1,106 @@
+[project]
+name = "Kuu Navigator"
+requires-python = ">=3.11"
+
+
+[tool.mypy]
+exclude = [
+    'app/guiplatform/wxFormBuilder/toolboxframe\.py',  # Generated code
+    'conftest\.py',
+    'pyqoolloop',  # TOML's double-quoted strings require escaping backslashes
+    'pylog',  # but TOML's single-quoted strings do not
+]
+strict = true
+show_error_codes = true
+ignore_missing_imports = true
+follow_imports = 'silent'
+
+[tool.ruff]
+line-length = 88
+exclude = [
+    "app/guiplatform/wxFormBuilder/toolboxframe.py",
+    "docs/source",
+    "pyqoolloop",
+    "pylog",
+]
+
+[tool.ruff.format]
+quote-style = "preserve"
+
+[tool.ruff.lint]
+select = [
+    "A", "ANN", "ARG", "ASYNC", "B", "BLE", "C4", "C90", "D", "DTZ", "E", "EM", 
+    "F", "FBT", "FIX", "FLY", "FURB", "G", "I", "ICN", "INP", "ISC", "LOG", "N", "PERF", 
+    "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "S", "SIM", "SLF", 
+    "SLOT", "T10", "T20", "TID", "TD", "TRY", "UP", "W", "YTT",
+    "COM818",  # Trailing comma on bare tuple prohibited
+
+    # For Kuu Navigator
+    "PD", "NPY",
+]
+ignore = [
+    "D105",  # Missing docstring in magic method
+    "D107",  # Missing docstring in __init__  # Will write in class docstring
+    "D203",  # 1 blank line required before class docstring  # Incompatible with D211
+    "D212",  # Multi-line docstring summary should start at the first line
+    "EM101",  # Exception must not use a string literal, assign to variable first  # concise source code
+    "EM102",  # Exception must not use an f-string literal, assign to variable first  # concise source code
+    "RET504",  # Unnecessary assignment to `target` before `return` statement  # Using as comment
+    "S101",  # Use of assert detected
+    "SIM108",  # Use ternary operator `is_in = _set_in if equals == eq_operator else _iterable_in` instead o..  # inconsistent
+    "SIM300",  # Yoda conditions are discouraged  # Not necessarily so in AND/OR statements
+    "TID252",  # Relative imports from parent modules are banned
+    "UP038",  # Use X | Y in {} call instead of (X, Y)  # Slow performance
+
+    # Not yet
+    "TD002",  # Missing author in TODO
+    "TD003",  # Missing issue link on the line following this TODO
+    "TRY003",  # Avoid specifying long messages outside the exception class
+
+    # Not for Kuu Navigator
+    "AIR",  # Airflow
+    "DJ",  # Django
+    "EXE",  # flake8-executable
+    "FA",  # flake8-future-annotations
+    "INT",  # flake8-gettext
+
+    # TODO: Temporarily disable
+    "FIX002",  # Line contains TODO, consider resolving the issue
+]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"test_*.py" = [
+    "N802",  # Function name {name} should be lowercase
+    "PLR0917",  # Too many positional arguments (for test functions)
+    "T201",  # print found
+]
+
+[tool.ruff.lint.flake8-annotations]
+allow-star-arg-any = true
+
+[tool.ruff.lint.flake8-pytest-style]
+parametrize-names-type = "csv"
+parametrize-values-type = "list"
+mark-parentheses = false
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+section-order = ["future", "standard-library", "third-party", "numpy", "scikit", "panda3d", "qoolloop", "first-party", "local-folder"]
+
+[tool.ruff.lint.isort.sections]
+"numpy" = ["numpy", "scipy"]
+"panda3d" = ["direct", "panda3d"]
+"scikit" = ["skbio", "sklearn"]
+"qoolloop" = ["pylog", "pyqoolloop"]
+
+[tool.ruff.lint.pylint]
+# `max-args` is increased because behavior was changed.
+max-args = 9
+# `max-positional-args` is now in preview. https://docs.astral.sh/ruff/settings/#lint_pylint_max-positional-args
+max-positional-args = 5
+
+[tool.pytest.ini_options]
+addopts = "--mypy --ruff --ruff-format --doctest-modules --strict-markers --ignore-glob=*/wxFormBuilder/* --ignore-glob=*docs/* --ignore-glob=typings/* --ignore-glob=pyqoolloop/* --ignore-glob=pylog/*"
+markers = [
+    "unreliable: mark a test that doesn't always pass"
+]

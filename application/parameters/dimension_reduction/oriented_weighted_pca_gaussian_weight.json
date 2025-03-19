@@ -1,0 +1,11 @@
+{
+    "type": "OrientedWeightedPCA",
+    "parameters": {
+        "weight": {
+            "type": "Gaussian",
+            "parameters": {
+                "sigma": 5.0
+            }
+        }
+    }
+}

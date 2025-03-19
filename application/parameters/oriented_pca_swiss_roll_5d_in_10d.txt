@@ -1,0 +1,10 @@
+--dimension-reduction
+parameters/dimension_reduction/oriented_pca.json
+--data-source
+parameters/data_source/swiss_roll_5d_in_10d.json
+--visual-size
+1.0
+--neighborhood-radius
+20.0
+--number-of-points
+1000

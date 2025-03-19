@@ -1,0 +1,13 @@
+--shared-neighborhood
+--dimension-reduction
+parameters/dimension_reduction/oriented_pcoa.json
+--data-source
+parameters/data_source/grid_data_3d.json
+--visual-size
+0.2
+--neighborhood-radius
+4.0
+--number-of-points
+2000
+--animation-interval
+3

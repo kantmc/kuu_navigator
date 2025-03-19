@@ -1,0 +1,11 @@
+{
+    "type": "OrientedWeightedPCA",
+    "parameters": {
+        "weight": {
+            "type": "Linear",
+            "parameters": {
+                "radius": 20
+            }
+        }
+    }
+}

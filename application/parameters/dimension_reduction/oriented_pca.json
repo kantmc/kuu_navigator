@@ -1,0 +1,6 @@
+{
+    "type": "OrientedPCA",
+    "parameters": {
+        "random_state": 1234
+    }
+}

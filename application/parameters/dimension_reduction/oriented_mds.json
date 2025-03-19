@@ -1,0 +1,7 @@
+{
+    "type": "OrientedMDS",
+    "parameters": {
+        "eps": 1e-5,
+        "random_seed": 1234
+    }
+}

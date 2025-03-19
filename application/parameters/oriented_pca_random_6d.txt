@@ -1,0 +1,6 @@
+--dimension-reduction
+parameters/dimension_reduction/oriented_pca.json
+--data-source
+parameters/data_source/random_data_6d.json
+--neighborhood-radius
+7.0

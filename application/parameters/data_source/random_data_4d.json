@@ -1,0 +1,18 @@
+{
+    "type": "RandomData",
+    "parameters": {
+        "mins": [
+            -6,
+            -5,
+            -4,
+            -3
+        ],
+        "maxs": [
+            6,
+            5,
+            4,
+            3
+        ],
+        "count": 10000
+    }
+}

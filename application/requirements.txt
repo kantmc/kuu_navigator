@@ -1,0 +1,33 @@
+## kuu navigator
+numpy==1.26
+panda3d==1.10.14
+pandas
+scipy==1.13
+scikit-bio
+scikit-learn==1.4.2  # Fails with 1.5.0
+sphinxcontrib-fulltoc
+wpca
+wxPython==4.2.1
+types-wxpython==0.9.7
+
+## pyqoolloop
+# cryptography
+# funcsigs
+# msgpack
+# msgpack-types
+
+# dev
+mypy==1.11.1
+pylint  # necessary for `pyreverse`
+pytest
+pytest-cov
+pytest-mypy
+pytest-ruff
+pytest-testmon
+pytest-xdist
+ruff==0.9.10
+
+# documentation
+sphinx
+sphinx-autoapi
+sphinx_rtd_theme

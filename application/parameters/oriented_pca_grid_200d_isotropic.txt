@@ -1,0 +1,10 @@
+--dimension-reduction
+parameters/dimension_reduction/oriented_pca.json
+--data-source
+parameters/data_source/grid_data_200d_isotropic.json
+--neighborhood-radius
+9.0
+--visual-size
+0.1
+--number-of-points
+1000

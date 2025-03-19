@@ -1,0 +1,6 @@
+--dimension-reduction
+parameters/dimension_reduction/oriented_pca.json
+--data-source
+parameters/data_source/gaussian_6d_300k.json
+--visual-size
+1.0

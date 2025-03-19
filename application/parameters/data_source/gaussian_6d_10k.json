@@ -1,0 +1,15 @@
+{
+    "type": "Gaussian",
+    "parameters": {
+        "scale": [
+            24,
+            20,
+            16,
+            12,
+            8,
+            4
+        ],
+        "count": 10000,
+        "color_radius": 50
+    }
+}

@@ -1,0 +1,4 @@
+--dimension-reduction
+parameters/dimension_reduction/oriented_pca.json
+--data-source
+parameters/data_source/grid_data_3d_small.json

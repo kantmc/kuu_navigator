@@ -1,0 +1,20 @@
+{
+    "type": "GridData",
+    "parameters": {
+        "int_mins": [
+            -10,
+            -9,
+            -8
+        ],
+        "int_maxs": [
+            10,
+            9,
+            8
+        ],
+        "scale": [
+            1,
+            0.5,
+            0.25
+        ]
+    }
+}

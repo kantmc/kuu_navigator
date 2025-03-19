@@ -1,0 +1,6 @@
+[submodule "application/pylog"]
+	path = application/pylog
+	url = https://github.com/qoolloop/pylog.git
+[submodule "application/pyqoolloop"]
+	path = application/pyqoolloop
+	url = https://github.com/qoolloop/pyqoolloop.git

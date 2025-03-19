@@ -1,0 +1,6 @@
+--dimension-reduction
+parameters/dimension_reduction/oriented_pca.json
+--data-source
+parameters/data_source/desk_4d.json
+--neighborhood-radius
+2.0

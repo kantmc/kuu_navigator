@@ -1,0 +1,8 @@
+--dimension-reduction
+parameters/dimension_reduction/pca.json
+--local-dimension-reduction
+parameters/dimension_reduction/null.json
+--data-source
+parameters/data_source/grid_data_5d.json
+--neighborhood-radius
+2.0

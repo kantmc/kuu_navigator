@@ -1,0 +1,6 @@
+--dimension-reduction
+parameters/dimension_reduction/oriented_pca.json
+--data-source
+parameters/data_source/grid_data_12d_isotropic.json
+--neighborhood-radius
+13.0

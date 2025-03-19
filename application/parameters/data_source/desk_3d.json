@@ -1,0 +1,11 @@
+{
+    "type": "Desk",
+    "parameters": {
+        "connection_length": 10.0,
+        "connection_count": 2000,
+        "cube_lengths": [10, 9, 8],
+        "cube_count": 5000,
+        "neighborhood_shape": "sphere",
+        "random_seed": 1234
+    }
+}
